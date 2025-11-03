@@ -82,8 +82,8 @@ def process_file(file_path, ws, rows_b, url_row_index):
         df[df["row"].str.startswith("functional_hashtags")].sort_values("row")["value"].tolist(), col_idx)
 
 def main():
-    base_folder = r"C:\Users\tohjo\OneDrive\桌面\荒井\プロジェクト\対象企業の得意分野とハッシュタグ分析\playwright_output"
-    file_b = r"C:\Users\tohjo\OneDrive\桌面\荒井\プロジェクト\対象企業の得意分野とハッシュタグ分析\Structure_Beauty.xlsx"
+    base_folder = r"●●●●●\●●●●●\website-analysis-pipeline\playwright_output"
+    file_b = r"●●●●●\●●●●●\website-analysis-pipeline\Structure_Beauty.xlsx"
     transcripted_files = collect_transcripted_files(base_folder)
 
     print(f"実行予定：対象ファイル数 {len(transcripted_files)}")
