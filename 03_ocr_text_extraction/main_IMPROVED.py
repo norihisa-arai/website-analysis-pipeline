@@ -53,7 +53,7 @@ def process_folder(folder_path):
     print(f"OCR完了: {output_txt}")
 
 def main():
-    base_folder = r"C:\Users\tohjo\OneDrive\桌面\荒井\プロジェクト\対象企業の得意分野とハッシュタグ分析\playwright_output"
+    base_folder = r"●●●●●\●●●●●\website-analysis-pipeline\playwright_output"
 
     target_folders = [
         os.path.join(base_folder, d)
