@@ -20,3 +20,31 @@ flowchart TD
   A02 --> A03[03 OCR<br>Tesseract]
   A03 --> A04[04 GPT Analysis<br>企業強み＋ハッシュタグ]
   A04 --> A05[05 Write to Excel<br>Structure_Beauty.xlsx]
+```
+---
+## 🧰 Requirements
+Python 3.10+
+Node.js（Playwright初回セットアップで必要な場合あり）
+```
+pip install -r requirements.txt
+# Playwright 初回のみ
+python -m playwright install
+```
+---
+## 🚀 Quick Start
+```
+# 01: URL収集（Excelの起点URLから下層リンク再帰取得）
+python 01_crawl_urls/main.py
+
+# 02: URL群をヘッドレスで全画面スクショ（並列）
+python 02_screenshot_pages/main.py
+
+# 03: スクショをOCRしてテキスト化（改良版推奨）
+python 03_ocr_text_extraction/main_improved.py
+
+# 04: GPTで分析（プロンプトは 04_gpt_analysis/analysis_prompt.txt）
+#  → 出力を transcripted_*.xlsx などに保存
+
+# 05: Excelテンプレに自動転記（-1 または -2 を選択）
+python 05_excel_output/move_results_v2.py
+```
