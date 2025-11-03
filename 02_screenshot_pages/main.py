@@ -6,7 +6,7 @@ from playwright.async_api import async_playwright
 from tqdm.asyncio import tqdm_asyncio
 
 # === ExcelからURLリストを取得 ===
-excel_path = r"C:\Users\tohjo\OneDrive\桌面\荒井\プロジェクト\対象企業の得意分野とハッシュタグ分析\beautifulsoup-url_list.xlsx"
+excel_path = r"●●●●●\●●●●●\website-analysis-pipeline\beautifulsoup-url_list.xlsx"
 df = pd.read_excel(excel_path, header=None)
 
 # A列にTarget URL、その下にクロール済みURLがある形式
