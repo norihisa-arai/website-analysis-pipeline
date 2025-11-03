@@ -67,7 +67,7 @@ def crawl(start_url):
     return sorted(visited)
 
 # ===== Excel処理 =====
-xlsx_path = r"C:\Users\tohjo\OneDrive\桌面\荒井\プロジェクト\対象企業の得意分野とハッシュタグ分析\beautifulsoup-url_list.xlsx"
+xlsx_path = r"●●●●●\●●●●●\website-analysis-pipeline\beautifulsoup-url_list.xlsx"
 wb = openpyxl.load_workbook(xlsx_path)
 ws = wb.active
 
