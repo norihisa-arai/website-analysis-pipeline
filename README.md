@@ -40,11 +40,12 @@ python 01_crawl_urls/main.py
 python 02_screenshot_pages/main.py
 
 # 03: スクショをOCRしてテキスト化（改良版推奨）
-python 03_ocr_text_extraction/main_improved.py
+python 03_ocr_text_extraction/main.py
 
 # 04: GPTで分析（プロンプトは 04_gpt_analysis/analysis_prompt.txt）
 #  → 出力を transcripted_*.xlsx などに保存
 
 # 05: Excelテンプレに自動転記（-1 または -2 を選択）
-python 05_excel_output/move_results_v2.py
+python 05_excel_output/main.py
 ```
+
